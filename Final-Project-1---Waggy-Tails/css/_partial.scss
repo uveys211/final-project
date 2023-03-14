@@ -1,0 +1,142 @@
+main{
+    transform: translateY(72px);
+    #elements {
+        position: relative;
+
+        margin-bottom: 100px;
+        svg {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+    
+            path {
+                transform: rotate(180deg);
+                transform-origin: 50% 50%;
+            }
+        }
+    
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(16, 34, 58);
+            background: linear-gradient(263deg, rgba(16, 34, 58, 0.6) 100%, rgba(255, 255, 255, 1) 100%);
+        }
+    
+        background-image: url(/images/pageheader.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 32.5vh;
+    
+        .text-box {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+    
+            h1 {
+                color: white;
+                font-size: 2.5em;
+                line-height: 1em;
+                font-family: 'ABeeZee', sans-serif;
+                margin-bottom: 15px;
+                letter-spacing: -0.5px;
+                font-weight: 700;
+            }
+    
+            ol {
+                display: inline-flex;
+    
+                li {
+                    color: rgba(255, 255, 255, 0.8);
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin-right: 6px;
+    
+                    a {
+                        text-decoration: none;
+                        color: $bg-color2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices
+@media(min-width: 576px) {
+    main {
+        #elements {
+            height: 35vh;
+
+            div {
+                .text-box {
+                    ol {
+                        li {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Medium devices
+@media (min-width: 768px) {
+    main {
+        #elements {
+            height: 45vh;
+
+            div {
+                .text-box {
+                    h1 {
+                        font-size: 4em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices
+@media (min-width: 992px) {
+    main {
+        #elements {
+            height: 50vh;
+
+            .w-90 {
+                .text-box {
+                    h1 {
+                        font-size: 4.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Ultra Large devices
+@media (min-width: 1200px) {
+    main {
+        margin-left: 17.05%;
+        transform: translateY(0);
+
+        #elements {
+            height: 400px;
+
+            div {
+                .text-box {
+                    top: 40%;
+
+                    h1 {
+                        font-size: 4.2em;
+                    }
+                }
+            }
+        }
+    }
+}

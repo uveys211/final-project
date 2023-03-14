@@ -1,0 +1,202 @@
+@import '_variables';
+@import '_mixin';
+
+// =================================================================
+//                            HEADER
+// =================================================================
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    .on-page-main {
+        @include round;
+        border-radius: 67% 33% 81% 14% / 43% 69% 31% 41% !important;
+    }
+
+    .on-page-sub{
+        background-color: #dee9f7;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    background-color: $bg-color1;
+
+    .logo {
+        width: 10%;
+        padding: 10px 0;
+    }
+
+    .toggle-box {
+        width: 90%;
+
+        a {
+            @include tr-03;
+            color: white;
+            font-size: 1.3em;
+            padding: 2px 15px;
+            border-radius: 5px;
+            &:hover{
+                background-color: $bg-color2;
+            }
+        }
+    }
+
+    .nav-box {
+        .nav-items {
+            padding: 10px 0 20px;
+            .nav-item {
+                text-align: center;
+                padding-top: 20px;
+                font-weight: 500;
+                text-transform: uppercase;
+                .main-link {
+                    color: white;
+                    border-radius: 43% 69% 31% 41% / 67% 33% 81% 14%;
+                    padding: 10px;
+                    @include tr-05;
+                    &:hover {
+                        @include round;
+                        border-radius: 67% 33% 81% 14% / 43% 69% 31% 41%;
+                    }
+                    
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+                &:last-child{
+                    position: relative;
+                    .sub-nav-items{
+                        background-color: white;
+                        position: absolute;
+                        width: 200px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(128, 128, 128, 0.336);
+                        top: 25px;
+                        left: 100%;
+                        display: none;
+                        padding: 7px 0;
+                        ul{
+                            li{
+                                padding: 0;
+                                @include tr-05;
+                                .sub-link{
+                                    padding: 5px 0;
+                                    display: inline-block;
+                                    color: $bg-color1;
+                                    font-weight: 700;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .sub-nav-items{
+                            display: inline;
+                            ul{
+                                li{
+                                    &:hover{
+                                        background-color: $bg-color2;
+                                        .sub-link{
+                                            color: white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-box {
+        font-size: 13px;
+        text-align: center;
+
+        div {
+            padding-bottom: 15px;
+
+            i {
+                color: $bg-color2;
+                padding-right: 5px;
+            }
+
+            span {
+                color: white;
+            }
+        }
+
+        .icons {
+            font-size: 1.5em;
+            padding-top: 2px;
+            width: 100%;
+            margin: auto;
+            a {
+                padding: 0 10px;
+                i {
+                    @include tr-03;
+                }
+
+                &:hover {
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// =================================================================
+//                       RESPONSIVE DESIGN
+// =================================================================
+
+// Small devices
+@media(min-width: 576px) {}
+
+// Medium devices
+@media (min-width: 768px) {
+    #header {
+        .logo {
+            width: 8%;
+        }
+
+        .toggle-box {
+            width: 92%;
+        }
+    }
+}
+
+// Large devices
+@media (min-width: 992px) {
+    #header {
+        .logo {
+            width: 6%;
+        }
+
+        .toggle-box {
+            width: 94%;
+        }
+    }
+}
+
+// Ultra Large devices
+@media (min-width: 1200px) {
+    #header {
+        width: 17%;
+        height: 100vh;
+
+        .logo {
+            width: 140px;
+            padding: 38px 10px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

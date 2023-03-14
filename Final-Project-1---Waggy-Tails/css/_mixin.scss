@@ -1,0 +1,121 @@
+@mixin tr-03 {
+    transition: 0.3s ease;
+}
+
+@mixin tr-05 {
+    transition: 0.5s ease;
+}
+
+@mixin tr-1 {
+    transition: 1s ease;
+}
+
+@mixin round {
+    @include tr-03;
+    background-color: $bg-color2 !important;
+    color: $bg-color1 !important;
+}
+
+@mixin headerfont {
+    font-family: $abeezee;
+    font-weight: 700;
+    color: $bg-color1;
+}
+
+@mixin bg-1 {
+    background-color: $bg-color1;
+    color: white;
+}
+
+@mixin bg-2 {
+    background-color: $bg-color2;
+    color: $bg-color1;
+}
+
+@mixin border-1 {
+    border-color: $bg-color1;
+    color: $bg-color1;
+}
+
+@mixin border-2 {
+    border-color: $bg-color2;
+    color: $bg-color2;
+}
+
+@keyframes translate1 {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 30%;
+    }
+}
+
+@keyframes translate3 {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 40%;
+    }
+}
+
+@keyframes translate2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes shadow-effect-black {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    50% {
+        box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    100% {
+        box-shadow: 0px 0px 200px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 200px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 200px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+@keyframes shadow-effect-white {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@mixin blob-1 {
+    border-radius: 30% 70% 70% 30% / 30% 45% 55% 70%;
+}
+
+@mixin blob-2 {
+    border-radius: 57% 43% 31% 69% / 54% 61% 39% 46%;
+}
+
+@mixin blob-3 {
+    border-radius: 62% 38% 82% 18% / 54% 61% 39% 46%;
+}

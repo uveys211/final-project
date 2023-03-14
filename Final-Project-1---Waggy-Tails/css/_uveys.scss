@@ -1,0 +1,408 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    #touch{
+height: auto;
+.container{
+    position: relative;
+    .box-bottom {
+                    width: 80%;
+                    height:auto;
+                    top: 50%;
+                    padding-left: 100px;
+                    position: absolute;
+                    
+        
+                    .box1 {
+                        position: relative;
+                        text-align: center;
+                        padding: 20px;
+                        margin: 10px;
+                        background-color: #FDF3E2;
+                        border-radius: 8mm;
+        
+                        &:hover {
+                            .icon1 {
+                                top: -25%;
+                            }
+        
+                            .icon {
+                                top: -25%;
+                            }
+                        }
+        
+                        .icon {
+                            position: absolute;
+                            font-size: 20px;
+                            color: white;
+                            padding: 9px 13px;
+                            border-radius: 8mm;
+                            background-color: #FAB005;
+                            top: -18%;
+                            left: 45%;
+                            transition: 0.3s ease-in-out;
+                        }
+        
+                        .icon1 {
+                            position: absolute;
+                            font-size: 20px;
+                            color: white;
+                            padding: 10px 18px;
+                            border-radius: 8mm;
+                            background-color: #FAB005;
+                            top: -18%;
+                            left: 40%;
+                            transition: 0.3s ease-in-out;
+                        }
+        
+                        h1 {
+                            color: #10223A !important;
+                            font-weight: 600;
+                            line-height: 1.1;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 26px;
+                            margin-bottom: 20px;
+                            margin: 20px 0;
+                        }
+        
+                        p {
+                            color: #444444;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 17px;
+                            line-height: 1.6;
+                            font-weight: 400;
+                        }
+        
+                        .email {
+                            text-decoration: none;
+                            color: #444444;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-size: 17px;
+                            line-height: 1.6;
+                            font-weight: 400;
+                            transition: 0.3s ease-in-out;
+        
+                            &:hover {
+                                color: orange;
+                            }
+                        }
+}
+    }
+            .box-top {
+            top: 300px;
+
+            .box-left {
+                margin-left: 150px;
+
+                .paw {
+                    transform: rotate(30deg);
+                    color: #FDE3A7;
+                    font-size: 26px;
+                    margin-right: 5px;
+                }
+
+                h6 {
+                    color: #444444;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    opacity: 0.7;
+                    margin-bottom: 0.7em;
+                }
+
+                h1 {
+                    color: #10223A !important;
+                    font-weight: bold;
+                    line-height: 1.1;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 50px;
+                    margin-bottom: 20px;
+                    letter-spacing: -0.5px;
+                }
+
+                p {
+                    color: #444444;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 20px;
+                    line-height: 1.6;
+                    font-weight: 400;
+                }
+            }
+
+            .box-right {
+                
+                .kopke {
+                    border-radius: 10px;
+                    
+                }
+                .woof{
+                    font-size: 35px;
+                    z-index: 1;
+                    position: absolute;
+                    left:85%;
+                    font-family: 'Damion', serif;
+                    color: white;
+                    background-color: rgba(255, 166, 0, 0.685);
+                    padding: 15px;
+                    border-radius: 67% 33% 81% 14% / 43% 69% 31% 41% !important;
+                }
+            }
+        }
+
+}
+    }
+    #message {
+        .container {
+            width: 100%;
+            height: 80vh;
+            h1 {
+                padding-top: 100px;
+                text-align: center;
+                color: #10223A;
+                font-weight: 600;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 35px;
+                margin-bottom: 20px;
+
+            }
+            .boxes{
+                .boxx{
+                    .box1{
+                        width: 280px;
+                        margin-right:7%;
+                    }
+                    .box2{
+                        width: 280px;
+                    }
+                }
+                margin: auto;
+                .form-control{
+                    border-top:none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom:3px solid orange;
+                }
+                .messages {
+                    margin-bottom: 30px;
+                }
+    
+                .send {
+                    color: #10223A;
+                    font-size: 20px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 600;
+                    text-decoration: none;
+                    padding: 10px 30px;
+                    border-radius: 8mm;
+                    background-color: orange;
+                    margin-top: 20px;
+                    transition: 0.3s ease-in-out;
+    
+                    &:hover {
+                        color: white;
+                        background-color: #10223A;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    #map {
+        width: 100%;
+    }
+}
+
+
+// media
+// =======================================
+// =======================================
+// Small devices
+
+@media(max-width: 576px) {
+    
+    main{
+        #touch{
+            .container{
+                height: auto;
+                .box-top{
+                    
+                    flex-direction: column;
+
+                    
+                    .box-left{
+                        width: 100%;
+                      margin-left: 0; 
+                      margin-bottom: 50px;
+                      h1{
+                        font-size: 30px;
+                      }
+                      
+                    }
+                    .box-right{
+                        .woof{
+                           left: 40%;
+                           bottom: 500px;
+                        }
+                    }
+                }
+                .box-bottom{
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    flex-direction: column;
+                    .box1{
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+            }
+          
+        }
+        #message{
+            .container{
+                .row{
+                    .boxes{
+                        .boxx{
+                            flex-direction: column;
+                            .box1,.box2{
+                                width:100%;
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// Medium devices
+@media (max-width: 768px) {
+    main{
+        #touch{
+            .container{
+                height: auto;
+                .box-top{
+                    
+                    flex-direction: column;
+
+                    
+                    .box-left{
+                        width: 100%;
+                      margin-left: 0; 
+                      margin-bottom: 50px;
+                      h1{
+                        font-size: 30px;
+                      }
+                      
+                    }
+                    .box-right{
+                        .woof{
+                          left: 0;
+                        }
+                    }
+                }
+                .box-bottom{
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    flex-direction: column;
+                    .box1{
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+            }
+          
+        }
+        #message{
+            .container{
+                .row{
+                    .boxes{
+                        .boxx{
+                            flex-direction: column;
+                            .box1,.box2{
+                                width:100%;
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices
+@media (max-width: 992px) {
+    main{
+        #touch{
+            .container{
+                height: auto;
+                .box-top{
+                    
+                    flex-direction: column;
+
+                    
+                    .box-left{
+                        width: 100%;
+                      margin-left: 0; 
+                      margin-bottom: 50px;
+                      h1{
+                        font-size: 30px;
+                      }
+                      
+                    }
+                    .box-right{
+                        .woof{
+                           left: 40%;
+                           bottom: 500px;
+                        }
+                    }
+                }
+                .box-bottom{
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    flex-direction: column;
+                    .box1{
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+            }
+          
+        }
+        #message{
+            .container{
+                .row{
+                    .boxes{
+                        .boxx{
+                            flex-direction: column;
+                            .box1,.box2{
+                                width:100%;
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Ultra Large devices
+@media (max-width: 1200px) {
+    #sections {
+        margin-left: 17.05%;
+        padding-top: 0;
+    }
+}
